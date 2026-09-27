@@ -1,0 +1,8 @@
+{
+  "name": "world-view",
+  "version": "1.0.0",
+  "description": "A dynamic image gallery built with React",
+  "scripts": {
+    "start": "npx serve ."
+  }
+}
