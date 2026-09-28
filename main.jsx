@@ -1,41 +1,47 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./style.css";
+import mountainSunrise from "./assets/mountain sunrise.jpg";
+import oceanWaves from "./assets/ocean waves.jpg";
+import forestPath from "./assets/forest path.jpg";
+import desertDunes from "./assets/desert dunes golden hour.jpg";
+import cityNight from "./assets/city night.jpg";
+import northernLights from "./assets/northern lights night sky.jpg";
 
 const images = [
   {
     id: 1,
-    url: "assets/mountain sunrise.jpg",
+    url: mountainSunrise,
     title: "Mountain Sunrise",
     description: "A breathtaking view of mountains at dawn",
   },
   {
     id: 2,
-    url: "assets/ocean waves.jpg",
+    url: oceanWaves,
     title: "Ocean Waves",
     description: "Crystal clear waters meeting the shore",
   },
   {
     id: 3,
-    url: "assets/forest path.jpg",
+    url: forestPath,
     title: "Forest Path",
     description: "A peaceful trail through ancient woods",
   },
   {
     id: 4,
-    url: "assets/desert dunes golden hour.jpg",
+    url: desertDunes,
     title: "Desert Dunes",
     description: "Golden sands stretching to the horizon",
   },
   {
     id: 5,
-    url: "assets/city night.jpg",
+    url: cityNight,
     title: "City Lights",
     description: "Urban landscape glowing at night",
   },
   {
     id: 6,
-    url: "assets/northern lights night sky.jpg",
+    url: northernLights,
     title: "Northern Lights",
     description: "Aurora dancing across the sky",
   },
