@@ -1,7 +1,7 @@
-// ============================================
-// Image Data Array
-// Add new objects here to display more images
-// ============================================
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./style.css";
+
 const images = [
   {
     id: 1,
@@ -41,10 +41,6 @@ const images = [
   },
 ];
 
-// ============================================
-// ImageCard Component
-// Reusable card that displays a single image
-// ============================================
 function ImageCard({ image }) {
   return (
     <article className="card">
@@ -59,20 +55,14 @@ function ImageCard({ image }) {
   );
 }
 
-// ============================================
-// App Component (Parent)
-// Contains header, gallery grid, and footer
-// ============================================
 function App() {
   return (
     <>
-      {/* Header Section */}
       <header className="header">
         <h1 className="header-title">World View</h1>
         <p className="header-subtitle">Explore beautiful places around the globe</p>
       </header>
 
-      {/* Main Gallery Section */}
       <main className="main">
         <div className="gallery">
           {images.map((image) => (
@@ -81,7 +71,6 @@ function App() {
         </div>
       </main>
 
-      {/* Footer Section */}
       <footer className="footer">
         <p>&copy; 2026 World View Gallery. Built with React.</p>
       </footer>
@@ -89,8 +78,9 @@ function App() {
   );
 }
 
-// ============================================
-// Render the App to the DOM
-// ============================================
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
